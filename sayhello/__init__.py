@@ -17,4 +17,4 @@ app.jinja_env.lstrip_blocks = True
 db = SQLAlchemy(app)
 
 # 避免循环依赖
-from sayhello import views, errors, commands
+from sayhello import views, commands

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% block head %}
+    {% block metas %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% endblock metas %}
+    <title>{% block title %}Say Hello!{% endblock title %}</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    {% block styles %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% endblock styles %}
+{% endblock head %}
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="text-center display-4">
+                <a href="{{ url_for('index') }}" class="text-success"><strong>Say Hello</strong></a>
+                <small class="text-muted sub-title">to the world</small>
+            </h1>
+        </header>
+
+        {% for message in get_flashed_messages() %}
+        <div class="alter alter-info">
+            <button class="close" data-dismiss="alert">&times;</button>
+            {{ message }}
+        </div>
+        {% endfor %}
+
+        <main>
+            {% block content %}{% endblock content %}
+        </main>
+
+        <footer class="text-center">
+            {% block footer %}
+                <p><a id="bottom" href="#" title="Go Top">&uarr;</a></p>
+            {% endblock footer %}
+        </footer>
+    </div>
+
+    {% block scripts %}
+        <script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    {% endblock scripts %}
+</body>
+</html>
