@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4e16e41-e060-4cf4-b133-6b5c61044fe0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sayhello/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sayhello/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/sayhello/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sayhello/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +45,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="D:\workspace\python\flask-book\sayhello\sayhello" />
     </key>
   </component>
@@ -76,5 +78,11 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="Pipfile" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="572" y="335" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578236141193">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="572" y="335" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1578236141193" />
   </component>
 </project>
